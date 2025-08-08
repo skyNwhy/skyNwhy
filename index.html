@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sky N Why – Power BI Job Simulator</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Sky n Why – Power BI Job Simulator</title>
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --sky: #0066ff;
+      --why: #9b59b6;
+      --bg-light: #f5f7fa;
+      --text-dark: #1f1f1f;
+      --section-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
       line-height: 1.7;
+      scroll-behavior: smooth;
     }
 
     header {
+      background: linear-gradient(to right, var(--sky), var(--why));
+      color: white;
+      padding: 60px 20px 40px;
       text-align: center;
-      padding: 60px 20px 30px;
-      background: #ffffff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     header img {
@@ -26,47 +40,58 @@
       margin-bottom: 20px;
     }
 
-    header h1 {
-      font-size: 2.4rem;
-      margin: 0;
-      color: #222;
+    .brand {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+
+    .brand .sky {
+      color: var(--sky);
+    }
+
+    .brand .n {
+      color: white;
+    }
+
+    .brand .why {
+      color: var(--why);
     }
 
     header p {
-      color: #666;
-      font-size: 1.1rem;
-      margin-top: 10px;
+      font-size: 1.15rem;
+      opacity: 0.95;
     }
 
     main {
-      max-width: 850px;
-      margin: 40px auto;
+      max-width: 960px;
+      margin: 50px auto;
       padding: 0 20px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     }
 
     section {
-      padding: 40px 30px;
-      border-bottom: 1px solid #eee;
+      background-color: var(--section-bg);
+      padding: 40px;
+      margin-bottom: 32px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      animation: fadeInUp 0.5s ease both;
     }
 
-    section:last-child {
-      border-bottom: none;
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     h2 {
-      color: #0066ff;
-      font-size: 1.6rem;
+      color: var(--sky);
+      font-size: 1.7rem;
       margin-bottom: 12px;
-    }
-
-    h3 {
-      color: #444;
-      font-size: 1.2rem;
-      margin-top: 20px;
-      margin-bottom: 10px;
     }
 
     ul {
@@ -75,39 +100,28 @@
 
     .cta {
       text-align: center;
-      padding: 40px 20px;
-      font-size: 1.5rem;
-      background: #f0f8ff;
-      color: #0047ab;
+      padding: 60px 20px;
+      font-size: 1.8rem;
+      background: #eef3ff;
+      color: var(--sky);
       font-weight: bold;
     }
 
     .cta span {
-      font-size: 1.8rem;
-    }
-
-    .waitlist-button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 1rem;
-      background: #0066ff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .waitlist-button:hover {
-      background: #004bd6;
+      font-size: 2.2rem;
+      display: inline-block;
+      margin-right: 10px;
     }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
+      .brand {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.3rem;
       }
       .cta {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
     }
   </style>
@@ -115,14 +129,14 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="Sky N Why Logo" />
-    <h1>Sky <strong style="color:#0066ff">N</strong> Why</h1>
+    <img src="logo.png" alt="Sky n Why Logo" />
+    <div class="brand"><span class="sky">Sky</span> <span class="n">n</span> <span class="why">Why</span></div>
     <p>The Power BI Job Simulator – Built for Real Experience</p>
   </header>
 
   <main>
     <section>
-      <h2>What Most Power BI Learners Are Missing — And How SkyNWhy Is Filling the Gap</h2>
+      <h2>What Most Power BI Learners Are Missing — And How Sky n Why Is Filling the Gap</h2>
       <p>Power BI has become the go-to tool for business intelligence. Courses are a great starting point — they help learners build a strong foundation in the tool and its features.</p>
       <p><strong>But here’s the challenge:</strong> Most Power BI learners are not job-ready. They know the tool. But they don’t yet know how to navigate the job.</p>
     </section>
@@ -151,11 +165,11 @@
         <li>Paginated Reports</li>
         <li>Tabular Editor & ALM Toolkit</li>
       </ul>
-      <p><strong>Note:</strong> SkyNWhy is not for beginners. It’s for learners who already know Power BI or completed a course.</p>
+      <p><strong>Note:</strong> Sky n Why is not for beginners. It’s for learners who already know Power BI or completed a course.</p>
     </section>
 
     <section>
-      <h2>✨ What SkyNWhy Does Differently</h2>
+      <h2>✨ What Sky n Why Does Differently</h2>
       <ul>
         <li>Join a team of BI developers</li>
         <li>Simulated client requirements</li>
@@ -168,13 +182,12 @@
     <section>
       <h2>🌊 Why This Matters</h2>
       <p>In real BI jobs and interviews, clean dashboards aren’t enough. Can you deliver under pressure in a messy, fast-changing environment?</p>
-      <p><strong>SkyNWhy bridges the gap between tool knowledge and job performance.</strong></p>
+      <p><strong>Sky n Why bridges the gap between tool knowledge and job performance.</strong></p>
     </section>
   </main>
 
   <div class="cta">
-    <span>🚀</span> Launching Soon<br/>
-    <button class="waitlist-button">Join the Waitlist</button>
+    <span>🚀</span> Launching Soon
   </div>
 
 </body>
