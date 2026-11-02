@@ -1,197 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sky n Why – Power BI Job Simulator</title>
-  <link rel="icon" href="favicon.ico" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --sky: #0066ff;
-      --why: #9b59b6;
-      --bg: #ffffff;
-      --text: #1a1a1a;
-      --section: #f7f9fc;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      padding: 40px 20px 20px;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 150px;
-      margin-bottom: 10px;
-    }
-
-    .brand {
-      font-size: 2.8rem;
-      font-weight: 800;
-      margin: 0;
-    }
-
-    .brand .sky {
-      color: var(--sky);
-    }
-
-    .brand .n {
-      color: #333;
-    }
-
-    .brand .why {
-      color: var(--why);
-    }
-
-    header p {
-      font-size: 1.1rem;
-      color: #444;
-      margin-top: 8px;
-    }
-
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    section {
-      background-color: var(--section);
-      margin-bottom: 30px;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeInUp 0.8s ease forwards;
-    }
-
-    section:nth-child(1) { animation-delay: 0s; }
-    section:nth-child(2) { animation-delay: 0.2s; }
-    section:nth-child(3) { animation-delay: 0.4s; }
-    section:nth-child(4) { animation-delay: 0.6s; }
-    section:nth-child(5) { animation-delay: 0.8s; }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      color: var(--sky);
-      margin-bottom: 16px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .cta {
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      padding: 60px 20px;
-      color: var(--sky);
-    }
-
-    .cta span {
-      font-size: 2.2rem;
-      display: inline-block;
-      margin-bottom: 12px;
-    }
-
-    @media (max-width: 600px) {
-      .brand {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.3rem;
-      }
-      section {
-        padding: 30px 20px;
-      }
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark">
+<meta name="description" content="DIA by Skynwhy investigates disputed Power BI numbers across your data stack with read-only checks and evidence-backed explanations. Early access for design partners.">
+<meta name="theme-color" content="#102d29"><title>DIA by Skynwhy — Find out why the number is wrong</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header>
-    <img src="logo.png" alt="Sky n Why Logo" />
-    <h1 class="brand"><span class="sky">Sky</span> <span class="n">n</span> <span class="why">Why</span></h1>
-    <p>The Power BI Job Simulator – Built for Real Experience</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>What Most Power BI Learners Are Missing — And How Sky n Why Is Filling the Gap</h2>
-      <p>Power BI has become the go-to tool for business intelligence. Courses are a great starting point — they help learners build a strong foundation in the tool and its features.</p>
-      <p><strong>But here’s the challenge:</strong> Most Power BI learners are not job-ready. They know the tool. But they don’t yet know how to navigate the job.</p>
-    </section>
-
-    <section>
-      <h2>🔍 The Reality of Real-World Power BI Projects</h2>
-      <ul>
-        <li>Messy data from SQL, SharePoint, APIs</li>
-        <li>Performance issues with large datasets</li>
-        <li>Production refresh failures</li>
-        <li>Changing requirements mid-sprint</li>
-        <li>“The numbers don’t match” complaints</li>
-        <li>Advanced RLS and DAX debugging</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🧩 What’s Hard to Simulate in a Course</h2>
-      <ul>
-        <li>Refresh error debugging</li>
-        <li>Version control & deployment</li>
-        <li>Staging tables, SQL procedures</li>
-        <li>Client communication & change requests</li>
-        <li>Incremental Refresh</li>
-        <li>API refreshes via Power Automate</li>
-        <li>Paginated Reports</li>
-        <li>Tabular Editor & ALM Toolkit</li>
-      </ul>
-      <p><strong>Note:</strong> Sky n Why is not for beginners. It’s for learners who already know Power BI or completed a course.</p>
-    </section>
-
-    <section>
-      <h2>✨ What Sky n Why Does Differently</h2>
-      <ul>
-        <li>Join a team of BI developers</li>
-        <li>Simulated client requirements</li>
-        <li>Mid-project changes</li>
-        <li>Production-like bugs and blockers</li>
-        <li>Log work, solve issues, and deliver</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🌊 Why This Matters</h2>
-      <p>In real BI jobs and interviews, clean dashboards aren’t enough. Can you deliver under pressure in a messy, fast-changing environment?</p>
-      <p><strong>Sky n Why bridges the gap between tool knowledge and job performance.</strong></p>
-    </section>
-  </main>
-
-  <div class="cta">
-    <span>🚀</span><br>Launching Soon
-  </div>
-
-</body>
-</html>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap header"><a class="brand" href="#" aria-label="Skynwhy home"><span class="mark" aria-hidden="true">s.</span>Skynwhy</a><nav aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#trust">Built for trust</a><a class="nav-cta" href="#early-access">Early access <span aria-hidden="true">↗</span></a></nav></header>
+<main id="main">
+<section class="wrap hero" aria-labelledby="hero-title">
+<div><p class="eyebrow"><span class="dot" aria-hidden="true"></span>DIA / THE DATA INVESTIGATION AGENT</p><h1 id="hero-title">Why is this<br>number wrong?<br><em>DIA finds out.</em></h1><p class="intro">An AI support engineer for disputed Power BI numbers.</p><p class="detail">DIA investigates across the source app, pipelines, lakehouse and warehouse layers, semantic model and report — then explains the cause in plain words.</p><div class="actions"><a class="button" href="mailto:admin@skynwhy.com">Become a design partner <span aria-hidden="true">↗</span></a><a class="text-link" href="#how-it-works">See how it works ↓</a></div><p class="note">Early access. Read-only by design.</p></div>
+<aside class="trace" aria-labelledby="trace-title"><div class="trace-head"><span class="arrow" aria-hidden="true">↳</span><strong id="trace-title">Follow the number.</strong><span class="tag">DIA</span></div><p class="trace-description">One question. A path through your data.</p><ol class="path">
+<li><span class="node" aria-hidden="true">01</span><div><strong>Report</strong><span>The number the user sees</span></div><small>PBI</small></li>
+<li><span class="node" aria-hidden="true">02</span><div><strong>Semantic model</strong><span>Measures, filters and access</span></div></li>
+<li><span class="node" aria-hidden="true">03</span><div><strong>Lakehouse / warehouse</strong><span>Transformations and loaded data</span></div></li>
+<li><span class="node" aria-hidden="true">04</span><div><strong>Pipeline</strong><span>Jobs, timing and load history</span></div></li>
+<li><span class="node" aria-hidden="true">05</span><div><strong>Source app</strong><span>The records behind the report</span></div><small>SQL</small></li>
+</ol><div class="trace-result"><span class="arrow" aria-hidden="true">↳</span><div><strong>A cause you can inspect.</strong><p>Plain words + query evidence + engineer handoff</p></div></div><p class="diagram-note">Illustrative investigation path, not a customer result.</p></aside>
+</section>
+<section class="problem ruled" aria-labelledby="problem-title"><div class="wrap split"><p class="eyebrow">THE PROBLEM</p><div><h2 id="problem-title">“The report is wrong.”<br>Now comes the detective work.</h2><p>Finance, sales and operations teams raise the ticket. Data teams spend hours tracing the number by hand: from a visual, through a measure and a transformation, back to a job or a source record.</p><p>DIA brings that investigation into one evidence-backed explanation.</p></div></div></section>
+<section id="how-it-works" class="wrap section" aria-labelledby="how-title"><div class="section-heading"><div><p class="eyebrow">HOW IT WORKS</p><h2 id="how-title">From question to cause.</h2></div><p>A clear explanation for the user.<br>A complete handoff for the engineer.</p></div><ol class="steps">
+<li><span class="step-number">01 /</span><h3>Understands the question</h3><p>Starts with a form, chat or ticket to understand the number being disputed.</p></li>
+<li><span class="step-number">02 /</span><h3>Traces the number</h3><p>Follows its path through the lineage graph, from report to source.</p></li>
+<li><span class="step-number">03 /</span><h3>Checks each layer</h3><p>Runs read-only checks to find where the evidence diverges.</p></li>
+<li><span class="step-number">04 /</span><h3>Explains with evidence</h3><p>Gives the cause in plain words, plus an engineer handoff pack with every query it ran.</p></li>
+</ol></section>
+<section class="checks ruled" aria-labelledby="checks-title"><div class="wrap section"><div class="section-heading"><div><p class="eyebrow">WHAT IT CHECKS</p><h2 id="checks-title">Not every wrong number<br>has the same cause.</h2></div><p>DIA checks the data path.<br>It doesn’t guess what the business intended.</p></div><div class="check-grid">
+<article><span aria-hidden="true">↻</span><div><h3>Jobs &amp; timing</h3><p>Failed or still-running jobs, stale refreshes and data not loaded yet.</p></div></article>
+<article><span aria-hidden="true">≠</span><div><h3>Source history</h3><p>Source records that changed after a load, leaving different versions of the number.</p></div></article>
+<article><span aria-hidden="true">⊙</span><div><h3>Access &amp; context</h3><p>Row-level security, access differences, different definitions or filters.</p></div></article>
+<article><span aria-hidden="true">=</span><div><h3>Working as designed</h3><p>Evidence that explains why the number follows the system’s declared logic.</p></div></article>
+</div></div></section>
+<section id="trust" class="wrap section trust" aria-labelledby="trust-title"><div><p class="eyebrow">BUILT FOR TRUST</p><h2 id="trust-title">Investigate.<br>Don’t interfere.</h2><p class="intro muted">DIA reports what happened.<br>It never changes your data.</p></div><ul class="trust-list">
+<li><span aria-hidden="true">↗</span><div><h3>Read-only access</h3><p>Checks the evidence without writing to your data.</p></div></li>
+<li><span aria-hidden="true">↗</span><div><h3>No impersonation</h3><p>Uses its own explicitly granted access.</p></div></li>
+<li><span aria-hidden="true">↗</span><div><h3>Evidence behind every claim</h3><p>Every claim is backed by a real query result. Missing evidence stays a stated limit.</p></div></li>
+<li><span aria-hidden="true">↗</span><div><h3>Your cloud. Your AI choice.</h3><p>Runs in your own cloud. Claude by default; OpenAI and Azure OpenAI supported.</p></div></li>
+</ul></section>
+<section class="works ruled" aria-label="Supported platforms"><div class="wrap works-inner"><p class="eyebrow">WORKS WITH</p><ul><li>Power BI</li><li>Microsoft Fabric</li><li>Azure SQL</li><li class="planned">Databricks <span>planned</span></li></ul></div></section>
+<section id="early-access" class="wrap section" aria-labelledby="access-title"><div class="access-panel"><p class="eyebrow">LET’S INVESTIGATE TOGETHER</p><h2 id="access-title">Bring your<br>“this number is wrong.”</h2><p>Early access: we’re looking for a few design partners.</p><a class="button" href="mailto:admin@skynwhy.com">admin@skynwhy.com <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="wrap footer"><a class="brand" href="#" aria-label="Skynwhy home">Skynwhy<span class="footer-dot" aria-hidden="true">.</span></a><p>© 2026 Skynwhy.</p><a href="mailto:admin@skynwhy.com">Get in touch ↗</a></footer>
+</body></html>
